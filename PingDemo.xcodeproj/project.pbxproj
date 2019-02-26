@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7EE10CAF87830227F75F325A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B9255D9FC21071095DDA56 /* libPods.a */; };
+		861026C22224E4E800329C38 /* TKPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 861026C12224E4E800329C38 /* TKPing.m */; };
+		861026C52224EB5700329C38 /* TKServerPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 861026C42224EB5700329C38 /* TKServerPicker.m */; };
+		861026CD222505E700329C38 /* PingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 861026CC222505E700329C38 /* PingDemoTests.m */; };
+		861026D4222505FF00329C38 /* TKServerPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 861026C42224EB5700329C38 /* TKServerPicker.m */; };
+		861026D52225060400329C38 /* TKPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 861026C12224E4E800329C38 /* TKPing.m */; };
+		8610270C2225122400329C38 /* GBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8610270A2225122400329C38 /* GBViewController.m */; };
+		8610270D2225122400329C38 /* GBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8610270B2225122400329C38 /* GBViewController.xib */; };
 		8A56804E1655144C0096DB72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A56804D1655144C0096DB72 /* UIKit.framework */; };
 		8A5680501655144C0096DB72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A56804F1655144C0096DB72 /* Foundation.framework */; };
 		8A5680521655144C0096DB72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5680511655144C0096DB72 /* CoreGraphics.framework */; };
@@ -18,12 +24,32 @@
 		8A5680621655144C0096DB72 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5680611655144C0096DB72 /* Default@2x.png */; };
 		8A5680641655144C0096DB72 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A5680631655144C0096DB72 /* Default-568h@2x.png */; };
 		8A5680851655170E0096DB72 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5680841655170E0096DB72 /* CFNetwork.framework */; };
+		B5CE193A9FF912C1BA35FBDD /* libPods-PingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2799EDDD043CDA56CBE0712 /* libPods-PingDemo.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		861026CF222505E700329C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A5680401655144C0096DB72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A5680481655144C0096DB72;
+			remoteInfo = PingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		017B02A36FBAC06A15709C90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		1D35F6F9A7C129ADFC0C6868 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		30B9255D9FC21071095DDA56 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F423BB2A9EA06B4176F85C8 /* Pods-PingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingDemo.debug.xcconfig"; path = "Target Support Files/Pods-PingDemo/Pods-PingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		707FCA12C2DAB8AAE490887B /* Pods-PingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingDemo.release.xcconfig"; path = "Target Support Files/Pods-PingDemo/Pods-PingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		861026C02224E4E800329C38 /* TKPing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKPing.h; sourceTree = "<group>"; };
+		861026C12224E4E800329C38 /* TKPing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKPing.m; sourceTree = "<group>"; };
+		861026C32224EB5700329C38 /* TKServerPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKServerPicker.h; sourceTree = "<group>"; };
+		861026C42224EB5700329C38 /* TKServerPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKServerPicker.m; sourceTree = "<group>"; };
+		861026CA222505E700329C38 /* PingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		861026CC222505E700329C38 /* PingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingDemoTests.m; sourceTree = "<group>"; };
+		861026CE222505E700329C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		861027092225122400329C38 /* GBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBViewController.h; sourceTree = "<group>"; };
+		8610270A2225122400329C38 /* GBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBViewController.m; sourceTree = "<group>"; };
+		8610270B2225122400329C38 /* GBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBViewController.xib; sourceTree = "<group>"; };
 		8A5680491655144C0096DB72 /* PingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A56804D1655144C0096DB72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8A56804F1655144C0096DB72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,9 +64,17 @@
 		8A5680611655144C0096DB72 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8A5680631655144C0096DB72 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8A5680841655170E0096DB72 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E2799EDDD043CDA56CBE0712 /* libPods-PingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		861026C7222505E700329C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A5680461655144C0096DB72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,29 +83,30 @@
 				8A56804E1655144C0096DB72 /* UIKit.framework in Frameworks */,
 				8A5680501655144C0096DB72 /* Foundation.framework in Frameworks */,
 				8A5680521655144C0096DB72 /* CoreGraphics.framework in Frameworks */,
-				7EE10CAF87830227F75F325A /* libPods.a in Frameworks */,
+				B5CE193A9FF912C1BA35FBDD /* libPods-PingDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6BA0072D04E689441CE1C33C /* Pods */ = {
+		861026CB222505E700329C38 /* PingDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D35F6F9A7C129ADFC0C6868 /* Pods.debug.xcconfig */,
-				017B02A36FBAC06A15709C90 /* Pods.release.xcconfig */,
+				861026CC222505E700329C38 /* PingDemoTests.m */,
+				861026CE222505E700329C38 /* Info.plist */,
 			);
-			name = Pods;
+			path = PingDemoTests;
 			sourceTree = "<group>";
 		};
 		8A56803E1655144C0096DB72 = {
 			isa = PBXGroup;
 			children = (
 				8A5680531655144C0096DB72 /* Ping Demo */,
+				861026CB222505E700329C38 /* PingDemoTests */,
 				8A56804C1655144C0096DB72 /* Frameworks */,
 				8A56804A1655144C0096DB72 /* Products */,
-				6BA0072D04E689441CE1C33C /* Pods */,
+				CBCB58F2AAFD4923CCC5CE86 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				8A5680491655144C0096DB72 /* PingDemo.app */,
+				861026CA222505E700329C38 /* PingDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +126,7 @@
 				8A56804D1655144C0096DB72 /* UIKit.framework */,
 				8A56804F1655144C0096DB72 /* Foundation.framework */,
 				8A5680511655144C0096DB72 /* CoreGraphics.framework */,
-				30B9255D9FC21071095DDA56 /* libPods.a */,
+				E2799EDDD043CDA56CBE0712 /* libPods-PingDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,7 +136,14 @@
 			children = (
 				8A56805C1655144C0096DB72 /* GBAppDelegate.h */,
 				8A56805D1655144C0096DB72 /* GBAppDelegate.m */,
+				861027092225122400329C38 /* GBViewController.h */,
+				8610270A2225122400329C38 /* GBViewController.m */,
+				8610270B2225122400329C38 /* GBViewController.xib */,
 				8A5680541655144C0096DB72 /* Supporting Files */,
+				861026C02224E4E800329C38 /* TKPing.h */,
+				861026C12224E4E800329C38 /* TKPing.m */,
+				861026C32224EB5700329C38 /* TKServerPicker.h */,
+				861026C42224EB5700329C38 /* TKServerPicker.m */,
 			);
 			name = "Ping Demo";
 			path = PIngTest;
@@ -120,19 +163,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CBCB58F2AAFD4923CCC5CE86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F423BB2A9EA06B4176F85C8 /* Pods-PingDemo.debug.xcconfig */,
+				707FCA12C2DAB8AAE490887B /* Pods-PingDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		861026C9222505E700329C38 /* PingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 861026D1222505E700329C38 /* Build configuration list for PBXNativeTarget "PingDemoTests" */;
+			buildPhases = (
+				861026C6222505E700329C38 /* Sources */,
+				861026C7222505E700329C38 /* Frameworks */,
+				861026C8222505E700329C38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				861026D0222505E700329C38 /* PBXTargetDependency */,
+			);
+			name = PingDemoTests;
+			productName = PingDemoTests;
+			productReference = 861026CA222505E700329C38 /* PingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8A5680481655144C0096DB72 /* PingDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A5680671655144C0096DB72 /* Build configuration list for PBXNativeTarget "PingDemo" */;
 			buildPhases = (
-				A0C792FE3000BA9C2DC83245 /* Check Pods Manifest.lock */,
+				F4174DDC6BEE2776826A245D /* [CP] Check Pods Manifest.lock */,
 				8A5680451655144C0096DB72 /* Sources */,
 				8A5680461655144C0096DB72 /* Frameworks */,
 				8A5680471655144C0096DB72 /* Resources */,
-				B3448E148DBB62B7C5541523 /* Copy Pods Resources */,
-				86DB391498A81496BA0FF40A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +220,13 @@
 				CLASSPREFIX = GB;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Goonbee;
+				TargetAttributes = {
+					861026C9222505E700329C38 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A5680481655144C0096DB72;
+					};
+				};
 			};
 			buildConfigurationList = 8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -166,11 +241,19 @@
 			projectRoot = "";
 			targets = (
 				8A5680481655144C0096DB72 /* PingDemo */,
+				861026C9222505E700329C38 /* PingDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		861026C8222505E700329C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A5680471655144C0096DB72 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,70 +262,69 @@
 				8A5680601655144C0096DB72 /* Default.png in Resources */,
 				8A5680621655144C0096DB72 /* Default@2x.png in Resources */,
 				8A5680641655144C0096DB72 /* Default-568h@2x.png in Resources */,
+				8610270D2225122400329C38 /* GBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		86DB391498A81496BA0FF40A /* Embed Pods Frameworks */ = {
+		F4174DDC6BEE2776826A245D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PingDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A0C792FE3000BA9C2DC83245 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B3448E148DBB62B7C5541523 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		861026C6222505E700329C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861026D52225060400329C38 /* TKPing.m in Sources */,
+				861026CD222505E700329C38 /* PingDemoTests.m in Sources */,
+				861026D4222505FF00329C38 /* TKServerPicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A5680451655144C0096DB72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861026C22224E4E800329C38 /* TKPing.m in Sources */,
 				8A56805A1655144C0096DB72 /* main.m in Sources */,
+				8610270C2225122400329C38 /* GBViewController.m in Sources */,
 				8A56805E1655144C0096DB72 /* GBAppDelegate.m in Sources */,
+				861026C52224EB5700329C38 /* TKServerPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		861026D0222505E700329C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A5680481655144C0096DB72 /* PingDemo */;
+			targetProxy = 861026CF222505E700329C38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8A5680561655144C0096DB72 /* InfoPlist.strings */ = {
@@ -256,6 +338,112 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		861026D2222505E700329C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PingDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkmate.PingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingDemo.app/PingDemo";
+			};
+			name = Debug;
+		};
+		861026D3222505E700329C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PingDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkmate.PingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingDemo.app/PingDemo";
+			};
+			name = Release;
+		};
 		8A5680651655144C0096DB72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,7 +499,7 @@
 		};
 		8A5680681655144C0096DB72 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D35F6F9A7C129ADFC0C6868 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 2F423BB2A9EA06B4176F85C8 /* Pods-PingDemo.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIngTest/PingDemo-Prefix.pch";
@@ -324,7 +512,7 @@
 		};
 		8A5680691655144C0096DB72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 017B02A36FBAC06A15709C90 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 707FCA12C2DAB8AAE490887B /* Pods-PingDemo.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PIngTest/PingDemo-Prefix.pch";
@@ -338,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		861026D1222505E700329C38 /* Build configuration list for PBXNativeTarget "PingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				861026D2222505E700329C38 /* Debug */,
+				861026D3222505E700329C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A5680431655144C0096DB72 /* Build configuration list for PBXProject "PingDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

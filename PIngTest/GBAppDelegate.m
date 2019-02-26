@@ -7,42 +7,19 @@
 //
 
 #import "GBAppDelegate.h"
+#import "GBViewController.h"
+#import "TKServerPicker.h"
+
+
+@interface GBAppDelegate ()
+@property (nonatomic, strong) TKServerPicker *picker;
+@end
 
 @implementation GBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // create and configure a new ping object
-    self.ping = [GBPing new];
-    self.ping.host = @"google.com";
-//    self.ping.host = @"192.168.0.140";
-//    self.ping.host = @"192.168.0.255";
-    self.ping.delegate = self;
-    self.ping.timeout = 1;
-    self.ping.pingPeriod = 0.9;
-    
-    // setup the ping object (this resolves addresses etc)
-    [self.ping setupWithBlock:^(BOOL success, NSError *error) {
-        if (success) {
-            // start pinging
-            [self.ping startPinging];
-            
-            // stop it after 5 seconds
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                NSLog(@"stop it");
-                [self.ping stop];
-                self.ping = nil;
-            });
-        } else {
-            NSLog(@"failed to start");
-        }
-    }];
-
-    
-    
-    
-    //iOS boilerplate, we don't need any UI so we just show an empty UIViewController
-    self.window = [UIWindow new];
-    self.window.rootViewController = [UIViewController new];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [GBViewController new];
     [self.window makeKeyAndVisible];
     return YES;
 }
